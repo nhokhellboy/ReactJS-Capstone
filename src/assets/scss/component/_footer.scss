@@ -1,0 +1,48 @@
+footer {
+    padding-top: 120px;
+
+    .footer_top {
+        padding-bottom: 50px;
+
+        .container {
+            .footer_list {
+                .item {
+                    text-align: center;
+
+                    h5 {
+                        @include text($fs-l, $fw-7, $lh-48, $c-dark);
+                    }
+
+                    .item-body {
+                        display: flex;
+                        flex-direction: column;
+
+
+                        a {
+                            margin: 5px 0;
+                            @include text($fs-m, $fw-6, $lh-19, $c-dark);
+
+                        }
+                    }
+
+
+                }
+
+
+            }
+        }
+    }
+
+    .footer_bottom {
+        background-color: $bg-gray-c;
+        padding: 20px 0;
+        text-align: center;
+
+        p {
+            @include text($fs-m, $fw-4, $lh-24, $c-dark);
+
+        }
+
+        ;
+    }
+}

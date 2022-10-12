@@ -1,0 +1,653 @@
+@charset "UTF-8";
+/*
+    Các folder component và page tổ chức như react component folder 
+    Trong các file component.scss và page.scss thi  import variable
+    Trong file style sẽ import base ,component, page , template ...
+
+*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  max-width: 1280px;
+}
+
+.container-fluid {
+  padding: 0;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+header .container-fluid .header_top {
+  background: #000;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+header .container-fluid .header_top .logo {
+  margin: 10px 0px 8px 0px;
+  padding-left: 25px;
+}
+header .container-fluid .header_top .logo img {
+  width: 116px;
+  height: 32px;
+}
+header .container-fluid .header_top .header_right .content {
+  display: flex;
+  justify-content: flex-end;
+  margin-right: 40px;
+  align-items: center;
+  gap: 20px;
+}
+header .container-fluid .header_top .header_right .content .shop i {
+  color: white;
+}
+header .container-fluid .header_top .header_right .content .shop span {
+  font-size: 24px;
+  font-weight: 300;
+  line-height: 36.31px;
+  color: #fff;
+}
+header .container-fluid .header_top .header_right .content a {
+  text-decoration: none;
+  font-size: 24px;
+  font-weight: 300;
+  line-height: 19.36px;
+  color: #fff;
+}
+header .container-fluid nav {
+  padding: 10px 0px 8px 25px;
+  gap: 25px;
+  background: #f5f5f5;
+}
+header .container-fluid nav .line1 {
+  position: relative;
+}
+header .container-fluid nav .line1::before {
+  content: "";
+  width: 100%;
+  height: 0;
+  position: absolute;
+  bottom: 0;
+  background: #030303;
+  border: 1px solid #000000;
+}
+header .container-fluid nav .nav-link {
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 24.2px;
+  color: #000;
+}
+header .container-fluid nav .nguoi {
+  opacity: 0.7;
+}
+
+footer {
+  padding-top: 120px;
+}
+footer .footer_top {
+  padding-bottom: 50px;
+}
+footer .footer_top .container .footer_list .item {
+  text-align: center;
+}
+footer .footer_top .container .footer_list .item h5 {
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 48.41px;
+  color: #000;
+}
+footer .footer_top .container .footer_list .item .item-body {
+  display: flex;
+  flex-direction: column;
+}
+footer .footer_top .container .footer_list .item .item-body a {
+  margin: 5px 0;
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 19.36px;
+  color: #000;
+}
+footer .footer_bottom {
+  background-color: #CCCCCC;
+  padding: 20px 0;
+  text-align: center;
+}
+footer .footer_bottom p {
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 24.2px;
+  color: #000;
+}
+
+.card {
+  max-height: 600px;
+}
+.card img {
+  position: relative;
+}
+.card .feature {
+  position: absolute;
+  top: 30px;
+  right: 50px;
+  font-size: 30px;
+  color: rgba(0, 0, 0, 0.1);
+}
+.card .feature_like {
+  position: absolute;
+  top: 30px;
+  right: 50px;
+  font-size: 30px;
+  color: red;
+}
+.card .card-body h3 {
+  font-size: 24px;
+  font-weight: 300;
+  line-height: 29.05px;
+  color: #000;
+}
+.card .card-body p {
+  font-size: 20px;
+  font-weight: 300;
+  line-height: 24.2px;
+  color: #CBC9C9;
+}
+.card .card-body div {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #CCCCCC;
+}
+.card .card-body div a {
+  width: 50%;
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 29.05px;
+  color: #000;
+  background: #E1B067;
+  padding: 10px;
+  border: none;
+  border-radius: none;
+}
+.card .card-body div a:hover {
+  background: #fff;
+  color: #000;
+}
+.card .card-body div p {
+  margin: 0;
+  width: 50%;
+  text-align: center;
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 29.05px;
+  color: #000;
+}
+
+.productMobile img {
+  max-width: 146px;
+  height: 146px;
+}
+.home #carouselExampleControls {
+  height: 530px;
+}
+.home #carouselExampleControls .carousel-inner .carousel-item .row {
+  justify-content: center;
+  align-items: center;
+  height: 530px;
+}
+.home #carouselExampleControls .carousel-inner .carousel-item .row .product_img {
+  height: 530px;
+  text-align: right;
+}
+.home #carouselExampleControls .carousel-inner .carousel-item .row .product_img img {
+  width: 689px;
+  text-align: center;
+}
+.home #carouselExampleControls .carousel-inner .carousel-item .row .tital {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  text-align: left;
+}
+.home #carouselExampleControls .carousel-inner .carousel-item .row .tital div {
+  padding: 0 40px;
+}
+.home #carouselExampleControls .carousel-inner .carousel-item .row .tital div .tital_Name {
+  font-size: 40px;
+  font-weight: 300;
+  line-height: 48.41px;
+  color: #000;
+}
+.home #carouselExampleControls .carousel-inner .carousel-item .row .tital div .titail_desc {
+  font-size: 24px;
+  font-weight: 300;
+  line-height: 24.2px;
+  color: #000;
+  margin: 30px 0;
+}
+.home #carouselExampleControls .carousel-inner .carousel-item .row .tital div a {
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 29.05px;
+  color: #000;
+  background: #E1B067;
+  padding: 10px;
+  border: 1px solid;
+  border-radius: none;
+}
+.home #carouselExampleControls .carousel-inner .carousel-item .row .tital div a:hover {
+  background: #fff;
+  color: #000;
+}
+.home .feature-home {
+  padding: 50px 0;
+}
+.home .feature-home h2 {
+  background: linear-gradient(180deg, #F21299 0%, #1B02B5 100%);
+  font-size: 40px;
+  font-weight: 400;
+  line-height: 48.41px;
+  color: #fff;
+  width: 700px;
+  text-align: left;
+  padding: 0 20px;
+}
+
+.login {
+  margin-top: 60px;
+}
+.login h2 {
+  font-size: 40px;
+  font-weight: 400;
+  line-height: 48.41px;
+  color: #000;
+}
+.login hr {
+  margin: 40px 0;
+}
+.login form {
+  max-width: 800px;
+  margin: 0 auto;
+}
+.login form .form-group p {
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 24.2px;
+  color: rgba(0, 0, 0, 0.6);
+}
+.login form .form-group input {
+  background: #fff;
+}
+.login form .form-group .error_text {
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 24.2px;
+  color: RED;
+}
+.login form #css_password input {
+  border-right: none;
+  background: #fff;
+}
+.login form #css_password span {
+  border-left: none;
+  background: #fff;
+}
+.login form .form-bottom div {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 200px;
+}
+@media screen and (max-width: 578px) {
+  .login form .form-bottom div {
+    flex-direction: column;
+    gap: 0px;
+  }
+}
+.login form .form-bottom div a {
+  margin: 20px 0;
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 24.2px;
+  color: rgba(21, 42, 235, 0.8);
+}
+.login form .form-bottom div input {
+  background: rgba(33, 33, 33, 0.08);
+}
+.login form .form-bottom div button {
+  margin: 20px 0;
+  gap: 10px;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 24.2px;
+  color: #fff;
+  background: #6200EE;
+  padding: 16px 40px;
+  border: none;
+  border-radius: 20px;
+}
+.login form .form-bottom div button:hover {
+  background: linear-gradient(270deg, rgba(62, 32, 248, 0.9) 5.14%, #D017EE 89.71%);
+  color: #000;
+}
+.login form .form-bottom div button span {
+  margin-left: 10px;
+}
+.login form .form-bottom .facebook {
+  display: block;
+  text-align: center;
+}
+
+.regitster {
+  padding: 60px 0px;
+}
+.regitster .container h1 {
+  text-align: center;
+  font-size: 40px;
+  font-weight: 400;
+  line-height: 48.41px;
+  color: #000;
+}
+.regitster .container form .row .col-6 div {
+  padding: 10px 0;
+}
+.regitster .container form .row .col-6 .gender {
+  align-items: center;
+}
+.regitster .container form .row .col-6 button {
+  font-size: 30px;
+  font-weight: 400;
+  line-height: 36.31px;
+  color: #fff;
+  background: #AE18E2;
+  padding: 10px 50px;
+  border: 1px solid;
+  border-radius: none;
+}
+.regitster .container form .row .col-6 button:hover {
+  background: #AE18E2;
+  color: #fff;
+}
+
+.cart {
+  padding: 60px 0;
+}
+.cart h1 {
+  font-size: 40px;
+  font-weight: 400;
+  line-height: 48.41px;
+  color: #000;
+  padding-bottom: 50px;
+}
+.cart table thead tr th {
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 24.2px;
+  color: #000;
+}
+.cart table tbody tr td {
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 24.2px;
+  color: #000;
+}
+.cart table tbody tr td img {
+  width: 85px;
+}
+.cart table tbody tr .quantity button {
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 29.05px;
+  color: #fff;
+  background: #6200EE;
+  padding: 0px 10px;
+  border: 1px solid;
+  border-radius: 5px;
+}
+.cart table tbody tr .quantity button:hover {
+  background: #fff;
+  color: #000;
+}
+.cart table tbody tr .quantity span {
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 24.2px;
+  color: #000;
+}
+.cart div {
+  text-align: right;
+}
+.cart div button {
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 29.05px;
+  color: #fff;
+  background: #F2994A;
+  padding: 10px;
+  border: 1px solid;
+  border-radius: 5px;
+}
+.cart div button:hover {
+  background: #fff;
+  color: #000;
+}
+
+.detail {
+  padding: 60px 0;
+}
+.detail .row {
+  justify-content: space-around;
+  align-items: center;
+}
+.detail .row .product_img {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.detail .row .product_img img {
+  max-width: 100%;
+  transition: transform 0.3s;
+}
+.detail .row .product_img img:hover {
+  transform: scale(130%);
+}
+@media screen and (max-width: 576px) {
+  .detail .row .product_title {
+    padding: 0px 25px;
+  }
+}
+.detail .row .product_title h1 {
+  font-size: 30px;
+  font-weight: 300;
+  line-height: 36.31px;
+  color: #000;
+}
+.detail .row .product_title p {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 19.36px;
+  color: #000;
+}
+.detail .row .product_title h3 {
+  font-size: 24px;
+  font-weight: 500;
+  line-height: 29.05px;
+  color: #1ED90E;
+}
+.detail .row .product_title #btn button {
+  margin: 10px;
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 29.05px;
+  color: #000;
+  background: #CCCCCC;
+  padding: 10px;
+  border: none;
+  border-radius: none;
+}
+.detail .row .product_title #btn button:hover {
+  background: #CCCCCC;
+  color: #000;
+}
+.detail .row .product_title h4 {
+  padding: 10px 0 5px 0px;
+  font-size: 30px;
+  font-weight: 600;
+  line-height: 36.31px;
+  color: #FC0303;
+}
+.detail .row .product_title .so_luong {
+  margin-bottom: 10px;
+}
+.detail .row .product_title .so_luong button {
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 29.05px;
+  color: #000;
+  background: linear-gradient(180deg, #6181F3 0%, #7C97F5 99.48%);
+  padding: 10px 20px;
+  border: none;
+  border-radius: none;
+}
+.detail .row .product_title .so_luong button:hover {
+  background: linear-gradient(270deg, rgba(62, 32, 248, 0.9) 5.14%, #D017EE 89.71%);
+  color: #000;
+}
+.detail .row .product_title .so_luong span {
+  font-size: 30px;
+  font-weight: 400;
+  line-height: 36.31px;
+  color: #000;
+}
+.detail .row .product_title button {
+  font-size: 24px;
+  font-weight: 500;
+  line-height: 29.05px;
+  color: #fff;
+  background: linear-gradient(270deg, rgba(62, 32, 248, 0.9) 5.14%, #D017EE 89.71%);
+  padding: 10px 20px;
+  border: none;
+  border-radius: none;
+}
+.detail .row .product_title button:hover {
+  background: rgba(62, 32, 248, 0.9);
+  color: #fff;
+}
+.detail .realate-product h2 {
+  padding: 20px 0 50px 0;
+  font-size: 40px;
+  font-weight: 400;
+  line-height: 48.41px;
+  color: #000;
+  text-align: center;
+}
+.search form {
+  max-width: 1280px;
+  margin: 20px 0;
+}
+.search form p {
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 24.2px;
+  color: rgba(0, 0, 0, 0.6);
+}
+.search form div {
+  display: flex;
+  justify-content: flex-start;
+  gap: 10px;
+}
+.search form div input {
+  padding: 16px 12px 14px 14px;
+  width: 443px;
+  background: #CCCCCC !important;
+}
+.search form div button {
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 19.36px;
+  color: #fff;
+  background: #E1B067;
+  padding: 10px 25px;
+  border: none;
+  border-radius: 50px;
+}
+.search form div button:hover {
+  background: #fff;
+  color: #000;
+}
+.search h2 {
+  background: linear-gradient(180deg, #F21299 0%, #1B02B5 100%);
+  font-size: 40px;
+  font-weight: 400;
+  line-height: 48.41px;
+  color: #fff;
+  width: 100%;
+}
+.search div select {
+  width: 30%;
+}
+
+.profile {
+  padding: 60px 0;
+}
+@media screen and (max-width: 374px) {
+  .profile .profile {
+    min-width: 350px;
+  }
+}
+.profile h3 {
+  width: 30%;
+  padding: 5px 0px 5px 34px;
+  background: linear-gradient(180deg, #F21299 0%, #1B02B5 100%);
+  font-size: 40px;
+  font-weight: 400;
+  line-height: 48.41px;
+  color: #fff;
+}
+@media screen and (max-width: 578px) {
+  .profile h3 {
+    width: 100%;
+  }
+}
+.profile .row .col-lg-3 {
+  text-align: center;
+}
+.profile .row .col-lg-3 img {
+  width: 225px;
+  height: 225px;
+  border-radius: 50%;
+}
+@media screen and (max-width: 578px) {
+  .profile .row .col-lg-3 {
+    max-width: 100%;
+  }
+}
+@media screen and (max-width: 578px) {
+  .profile .row form {
+    padding: 0 25px;
+  }
+}
+.profile .row form .row .col-lg-6 .row button {
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 29.05px;
+  color: #fff;
+  background: #6200EE;
+  padding: 10px;
+  border: none;
+  border-radius: 10px;
+}
+.profile .row form .row .col-lg-6 .row button:hover {
+  background: #CCCCCC;
+  color: #000;
+}

@@ -1,0 +1,54 @@
+.cart {
+    padding: 60px 0;
+
+    h1 {
+        @include text ($fs-2xl, $fw-4, $lh-48, $c-dark);
+        padding-bottom: 50px;
+    }
+
+    table {
+        thead {
+            tr {
+                th {
+                    @include text ($fs-m, $fw-4, $lh-24, $c-dark);
+
+                }
+            }
+        }
+
+        tbody {
+            tr {
+                td {
+                    @include text ($fs-m, $fw-4, $lh-24, $c-dark);
+
+                    img {
+                        width: 85px;
+                    }
+
+
+
+                }
+
+                .quantity {
+                    button {
+
+                        @include button($fs-l, $fw-4, $lh-29, $c-white, #6200EE, 0px 10px, 1px solid, 5px, $c-white, $c-dark);
+                    }
+
+                    span {
+                        @include text ($fs-m, $fw-4, $lh-24, $c-dark)
+                    }
+                }
+            }
+        }
+    }
+
+    div {
+        text-align: right;
+
+        button {
+            @include button($fs-l, $fw-4, $lh-29, $c-white, #F2994A, 10px, 1px solid, 5px, $c-white, $c-dark);
+
+        }
+    }
+}
